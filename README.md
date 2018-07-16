@@ -11,7 +11,8 @@ Snake game
 * Ha a falnak ütközik, vége a játéknak.
 * Ha a saját testének ütközik, vége a játéknak.
 * Az elfogyasztott eledel után a játékos pontokat kap.
-* A kígyó hosszaa az indulásnál 5 egység legyen.
+* A kígyó hossza az indulásnál 5 egység legyen.
 * A kígyó mozgási sebessége fix.
 * A játék akkor ér véget, ha a kígyó teljesen kitölti a játékteret.
 * A játéktér induló mérete 50 x 50 négyzet.
+* "Új játék" gombra indul.
