@@ -19,9 +19,20 @@ class Playground {
       this.targetDiv.appendChild(tile.div);
     }
     this.setSize();
+    this.generateFood();
+    this.snake = new Snake(5, this.tiles);
   }
+
   setSize() {
     var style = window.getComputedStyle(this.targetDiv);
     this.targetDiv.style.height = style.width;
+  }
+
+  generateFood() {
+    var filteredTiles = this.tiles.filter(function (item) {
+      return item.type == 'empty';
+    });
+    var random = Math.floor(Math.random() * filteredTiles.length);
+    filteredTiles[random].setFood();
   }
 }
